@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to vuejs continous deployment: ILIWILI TEST1"/>
+    <HelloWorld :msg="`Welcome to vuejs continous deployment: ILIWILI ${test}`"/>
   </div>
 </template>
 
@@ -10,9 +10,17 @@ import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
+  data: () => {
+    return {
+      test: process.env.VUE_APP_TITLE
+    };
+  },
   components: {
     HelloWorld
-  }
+  },
+  created() {
+    console.log(process.env.NODE_ENV)
+  } 
 }
 </script>
 
