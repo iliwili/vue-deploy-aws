@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to vuejs continous deployment: ILIWILI"/>
+    <HelloWorld msg="Welcome to vuejs continous deployment: ILIWILI TEST1"/>
   </div>
 </template>
 
